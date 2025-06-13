@@ -13,11 +13,7 @@ public class UserService {
     public UserService (UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-    public User createUser(Optional<User> user) {
-        if (user.isPresent()) {
-         return userRepository.save(user.get());
-
-        }
-        
+    public User createUser(User user) {
+      return userRepository.save(user);
     }
 }
