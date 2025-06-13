@@ -1,7 +1,9 @@
 package com.tuan.authservice.repositories;
 
-import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Repository;
+
+import com.tuan.authservice.models.User;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
