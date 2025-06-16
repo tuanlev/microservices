@@ -23,6 +23,12 @@ spring:
   sql:
     init:
       schema-locations: classpath:schema.sql  # ✅ Đúng từ khóa classpath
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          public-key-location: classpath:public.pem
+          - 
 # eureka:
 #   client:
 #     service-url:
